@@ -11,8 +11,12 @@
 
 </head>
 <body>
-<div class="container">
-	<form action="<%=request.getContextPath() %>/AddMovie" method="post">
+<div class="container-fluid">
+<%@include file="NewMenu.jsp" %>
+<div class="row">
+   		<div class="col-md-3"></div>
+   		<div class="col-md-6">
+	<form action="AddMovie" method="post">
 	  
 	   <div class="form-group">
 	    <label for="inputMovieName">MovieName</label>
@@ -24,7 +28,8 @@
 	  </div>	 
 	  <button type="submit" class="btn btn-primary">Add Movie</button>
 	</form>
-	
+	</div>
+	</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
