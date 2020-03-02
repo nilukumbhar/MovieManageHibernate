@@ -35,15 +35,6 @@ private static final long serialVersionUID = 1L;
 			MovieDAO movieDAO = new MovieDAOImpl();
 			Long r=movieDAO.addMovie(movie);
 			System.out.println("r "+r);
-			
-			
-			/*SessionFactory sessionFactory = HiberUtility.getSessionFactory();
-			Session session = sessionFactory.openSession();
-			Transaction tx= session.beginTransaction();
-			session.save(movie);
-			session.flush();
-			tx.commit();
-			session.close();*/
 			response.sendRedirect("sucess.jsp");
 		}
 		
