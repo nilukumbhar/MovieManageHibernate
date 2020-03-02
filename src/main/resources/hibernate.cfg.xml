@@ -26,6 +26,7 @@
          
         <!-- Resource Mapping -->
         <mapping class="com.techdenovo.moviemanagehibernate.model.Movie"/>
+        <mapping class="com.techdenovo.moviemanagehibernate.model.User"/>
          
     </session-factory>
 </hibernate-configuration>
