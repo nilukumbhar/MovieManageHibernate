@@ -48,6 +48,15 @@ public class MovieDAOImpl implements MovieDAO {
 			
 		}
 
+		@Override
+		public void deleteMovie(Movie movie) {
+			Session session = sessionFactory.openSession();
+			Transaction tx=  session.beginTransaction();
+			session.delete(movie);
+			tx.commit();
+			session.close();
+		}
+
 	
 
 		

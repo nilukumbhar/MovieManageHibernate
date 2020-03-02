@@ -32,7 +32,7 @@
 								<td><c:out value="${movie.movie_name}"/></td>
 								<td><c:out value="${movie.movie_description}"/></td>
 								<td><a href="EditMovieServlet?id=${movie.movie_id}">Edit</a>  
-								    <a href="delete?id=<c:out value='${user.id}' />">Delete</a>
+								    <a href="DeleteMovieServlet?id=${movie.movie_id}">Delete</a>
 								</td>
 							</tr>
 							

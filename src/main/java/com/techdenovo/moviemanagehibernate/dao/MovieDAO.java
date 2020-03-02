@@ -9,5 +9,6 @@ public interface MovieDAO {
 		public Long addMovie(Movie movie);
 		public Movie findById(Long id);
 		public void updateMovie(Movie movie);
+		public void deleteMovie(Movie movie);
 			
 }
